@@ -12,7 +12,7 @@ time.sleep(1)  # Sleep for a bit to avoid a race condition on some systems
 keyboard = Keyboard(usb_hid.devices)
 keyboard_layout = KeyboardLayoutUS(keyboard)
 
-delay       = 1
+delay       = 2
 delayStroke = 0.001
 delayWrite  = 0.001
 delayAlt    = 1
@@ -21,6 +21,9 @@ delayCompensatorNetProst = 3
 file_path = r"%userprofile%\downloads\mareSefDeSef.jpg"
 # link = 'https://img.youtube.com/vi/rG49F1WNaTw/hqdefault.jpg'
 link = "https://i.postimg.cc/Ssg3YDQt/hqdefault.jpg"
+
+# ca sa nu-l grabim
+time.sleep(5)
 
 # windows fuga
 keyboard.press(Keycode.GUI, Keycode.R)
